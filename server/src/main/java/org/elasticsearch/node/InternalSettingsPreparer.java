@@ -51,6 +51,7 @@ public class InternalSettingsPreparer {
         // just create enough settings to build the environment, to get the config dir
         Settings.Builder output = Settings.builder();
         initializeSettings(output, input, properties);
+        // 初始化设置一堆路径，如bin/config/lib/modules//data/plugins...
         Environment environment = new Environment(output.build(), configPath);
 
         if (Files.exists(environment.configFile().resolve("elasticsearch.yaml"))) {

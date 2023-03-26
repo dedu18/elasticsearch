@@ -19,7 +19,7 @@ import java.util.Locale;
  * behaviour, but do not otherwise hook into the Elasticsearch lifecycle.
  */
 public enum PluginType {
-    ISOLATED,
+    ISOLATED,// 独立的
     BOOTSTRAP;
 
     @Override

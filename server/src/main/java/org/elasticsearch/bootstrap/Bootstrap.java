@@ -73,7 +73,7 @@ final class Bootstrap {
                 try {
                     keepAliveLatch.await();
                 } catch (InterruptedException e) {
-                    // bail out
+                    // bail out（退出）
                 }
             }
         }, "elasticsearch[keepAlive/" + Version.CURRENT + "]");

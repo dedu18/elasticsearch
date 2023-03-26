@@ -81,4 +81,6 @@ node.name: node-1
 #
 #action.destructive_requires_name: false
 
+# 关闭 geoip 的自动更新，否则报错 .geoip 索引创建失败
+ingest.geoip.downloader.enabled: false
 xpack.security.enabled: false

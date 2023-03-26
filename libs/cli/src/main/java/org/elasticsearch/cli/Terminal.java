@@ -61,7 +61,7 @@ public abstract class Terminal {
         this.lineSeparator = lineSeparator;
     }
 
-    /** Sets the verbosity of the terminal. */
+    /** Sets the verbosity of（详细信息） the terminal. */
     public void setVerbosity(Verbosity verbosity) {
         this.currentVerbosity = verbosity;
     }
